@@ -243,6 +243,20 @@
       </div>
       <?php } ?>
     </div>
+    <div class="suggestions">
+    <div class="text">
+    You might also like this
+    </div>
+    <div class="description">
+        <?php if ($manufacturer) { ?>
+        <span><?php echo $text_manufacturer; ?></span> <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a><br />
+        <?php } ?>
+        <span><?php echo $text_model; ?></span> <?php echo $model; ?><br />
+        <?php if ($reward) { ?>
+        <span><?php echo $text_reward; ?></span> <?php echo $reward; ?><br />
+        <?php } ?>
+        <span><?php echo $text_stock; ?></span> <?php echo $stock; ?></div>
+    </div>
   </div>
   <div id="tabs" class="htabs"><a href="#tab-description"><?php echo $tab_description; ?></a>
     <?php if ($attribute_groups) { ?>

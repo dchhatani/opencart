@@ -107,6 +107,12 @@ class ControllerCheckoutPaymentMethod extends Controller {
 			$this->data['comment'] = '';
 		}
 		
+		if (isset($this->session->data['referer'])) {
+			$this->data['referer'] = $this->session->data['referer'];
+		} else {
+			$this->data['referer'] = "None";
+		}
+		
 		if ($this->config->get('config_checkout_id')) {
 			$this->load->model('catalog/information');
 			
@@ -199,6 +205,8 @@ class ControllerCheckoutPaymentMethod extends Controller {
 				$this->session->data['payment_method'] = $this->session->data['payment_methods'][$this->request->post['payment_method']];
 			  
 				$this->session->data['comment'] = strip_tags($this->request->post['comment']);
+				
+				$this->session->data['referer'] = $this->request->post['referer'];
 			}							
 		}
 		

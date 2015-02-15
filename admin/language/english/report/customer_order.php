@@ -16,7 +16,10 @@ $_['column_total']          = 'Total';
 $_['column_action']         = 'Action';
 
 // Entry
-$_['entry_date_start']      = 'Date Start:';
-$_['entry_date_end']        = 'Date End:';
-$_['entry_status']          = 'Order Status:';
+$_['column_referer']       = 'Referer Name';
+$_['column_orders']        = 'Number of Orders';
+$_['column_total']         = 'Total Order Price';
+
+$_['heading_bestcust1']      = 'Best Customer By Price of Order Sales ';
+$_['heading_bestcust2']      = 'Best Customer By Number of Products Sold';
 ?>

@@ -16,45 +16,30 @@ final class MySQLi {
   	}
 		
   	public function query($sql) {
-		$result = $this->mysqli->query($sql);
+  	$query = $this->link->query($sql);
 
-		
-
-		if ($this->mysqli->errno) {
-		//$mysqli->errno
-		}
-		
-			if (is_resource($resource)) {
-				$i = 0;
-    	
+		if (!$this->link->errno) {
+			if ($query instanceof mysqli_result) {
 				$data = array();
-		
-				while ($row = $result->fetch_object()) {
-					$data[$i] = $row;
-    	
-					$i++;
+
+				while ($row = $query->fetch_assoc()) {
+					$data[] = $row;
 				}
 
-				$result->close();
-				
-				$query = new stdClass();
-				$query->row = isset($data[0]) ? $data[0] : array();
-				$query->rows = $data;
-				$query->num_rows = $result->num_rows;
-				
-				unset($data);
-				
-				
-				
-				
-				return $query;	
-    		} else {
+				$result = new stdClass();
+				$result->row = isset($data[0]) ? $data[0] : array();
+				$result->rows = $data;
+				$result->num_rows = $query->num_rows;
+
+				$query->close();
+
+				return $result;
+			} else {
 				return true;
 			}
 		} else {
-			trigger_error('Error: ' . mysql_error($this->link) . '<br />Error No: ' . mysql_errno($this->link) . '<br />' . $sql);
-			exit();
-    	}
+			trigger_error('Error: ' . $this->link->error  . '<br />Error No: ' . $this->link->errno . '<br />' . $sql);
+		}
   	}
 	
 	public function escape($value) {

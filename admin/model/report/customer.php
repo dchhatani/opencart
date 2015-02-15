@@ -36,6 +36,78 @@ class ModelReportCustomer extends Model {
 		return $query->rows;
 	}
 
+	public function getBestOrderByPrice($data) {
+		$sql = "SELECT tmp.customer_id, tmp.customer, tmp.email, tmp.customer_group, tmp.status, COUNT(tmp.order_id) AS orders, SUM(tmp.products) AS products, SUM(tmp.total) AS total FROM (SELECT o.order_id, c.customer_id, CONCAT(o.firstname, ' ', o.lastname) AS customer, o.email, cgd.name AS customer_group, c.status, (SELECT SUM(op.quantity) FROM `" . DB_PREFIX . "order_product` op WHERE op.order_id = o.order_id GROUP BY op.order_id) AS products, o.total FROM `" . DB_PREFIX . "order` o LEFT JOIN `" . DB_PREFIX . "customer` c ON (o.customer_id = c.customer_id) LEFT JOIN " . DB_PREFIX . "customer_group_description cgd ON (c.customer_group_id = cgd.customer_group_id) WHERE o.customer_id > 0 AND cgd.language_id = '" . (int)$this->config->get('config_language_id') . "'";
+				
+	   if (!empty($data['filter_order_status_id'])) {
+			$sql .= " AND o.order_status_id = '" . (int)$data['filter_order_status_id'] . "'";
+		} else {
+			$sql .= " AND o.order_status_id > '0'";
+		}
+				
+		if (!empty($data['filter_date_start'])) {
+			$sql .= " AND DATE(o.date_added) >= '" . $this->db->escape($data['filter_date_start']) . "'";
+		}
+
+		if (!empty($data['filter_date_end'])) {
+			$sql .= " AND DATE(o.date_added) <= '" . $this->db->escape($data['filter_date_end']) . "'";
+		}
+				
+		$sql .= ") tmp GROUP BY tmp.customer_id ORDER BY total DESC";
+		
+		if (isset($data['start']) || isset($data['limit'])) {
+			if ($data['start'] < 0) {
+				$data['start'] = 0;
+			}
+		
+			if ($data['limit'] < 1) {
+				$data['limit'] = 20;
+			}
+				
+			$sql .= " LIMIT " . (int)$data['start'] . "," . (int)$data['limit'];
+		}
+									
+		$query = $this->db->query($sql);
+	
+		return $query->rows[0];
+	}
+	
+	public function getBestOrderByProductsSold($data) {
+		$sql = "SELECT tmp.customer_id, tmp.customer, tmp.email, tmp.customer_group, tmp.status, COUNT(tmp.order_id) AS orders, SUM(tmp.products) AS products, SUM(tmp.total) AS total FROM (SELECT o.order_id, c.customer_id, CONCAT(o.firstname, ' ', o.lastname) AS customer, o.email, cgd.name AS customer_group, c.status, (SELECT SUM(op.quantity) FROM `" . DB_PREFIX . "order_product` op WHERE op.order_id = o.order_id GROUP BY op.order_id) AS products, o.total FROM `" . DB_PREFIX . "order` o LEFT JOIN `" . DB_PREFIX . "customer` c ON (o.customer_id = c.customer_id) LEFT JOIN " . DB_PREFIX . "customer_group_description cgd ON (c.customer_group_id = cgd.customer_group_id) WHERE o.customer_id > 0 AND cgd.language_id = '" . (int)$this->config->get('config_language_id') . "'";
+	
+	    if (!empty($data['filter_order_status_id'])) {
+			$sql .= " AND o.order_status_id = '" . (int)$data['filter_order_status_id'] . "'";
+		} else {
+			$sql .= " AND o.order_status_id > '0'";
+		}
+				
+		if (!empty($data['filter_date_start'])) {
+			$sql .= " AND DATE(o.date_added) >= '" . $this->db->escape($data['filter_date_start']) . "'";
+		}
+
+		if (!empty($data['filter_date_end'])) {
+			$sql .= " AND DATE(o.date_added) <= '" . $this->db->escape($data['filter_date_end']) . "'";
+		}
+		
+		$sql .= ") tmp GROUP BY tmp.customer_id ORDER BY products DESC";
+		
+		if (isset($data['start']) || isset($data['limit'])) {
+			if ($data['start'] < 0) {
+				$data['start'] = 0;
+			}
+		
+			if ($data['limit'] < 1) {
+				$data['limit'] = 20;
+			}
+				
+			$sql .= " LIMIT " . (int)$data['start'] . "," . (int)$data['limit'];
+		}
+								
+		$query = $this->db->query($sql);
+	
+		return $query->rows[0];
+	}
+	
 	public function getTotalOrders($data = array()) {
 		$sql = "SELECT COUNT(DISTINCT o.customer_id) AS total FROM `" . DB_PREFIX . "order` o WHERE o.customer_id > '0'";
 		
@@ -183,6 +255,47 @@ class ModelReportCustomer extends Model {
 						
 		$query = $this->db->query($sql);
 		
+		return $query->row['total'];
+	}
+	
+	public function getReferees(){
+		$sql = "SELECT o.referer, count(op.product_id) as products , count(DISTINCT o.order_id) as orders, sum(o.total) as total
+        FROM " . DB_PREFIX . "order o JOIN " . DB_PREFIX . "order_product op where o.order_id = op.order_id and referer <> ''
+         group by referer";
+		$query = $this->db->query($sql);		
+		return $query->rows;
+	
+	}
+	
+	public function getRefereeDetails($name){
+		$sql = "select DISTINCT op.product_id as product_id , p.name as name from " . DB_PREFIX . "order o, " . DB_PREFIX . "order_product op , " . DB_PREFIX . "product_description p where o.order_id = op.order_id AND op.product_id = p.product_id AND o.referer = '". $name ."'";
+		$query = $this->db->query($sql);
+		return $query->rows;
+	}
+	
+	public function getBestRefereeByOrderPrice(){
+		$sql = "select o.referer, count(op.product_id) as products , count(DISTINCT o.order_id) as orders, sum(o.total) as total
+        from " . DB_PREFIX . "order o JOIN " . DB_PREFIX . "order_product op where o.order_id = op.order_id and referer <> ''
+         group by referer order by total DESC";
+		$query = $this->db->query($sql);
+		return $query->rows[0];
+		
+	}
+	
+	public function getBestRefereeByProductsSold(){
+		$sql = "select o.referer, count(op.product_id) as products , count(DISTINCT o.order_id) as orders, sum(o.total) as total
+        from " . DB_PREFIX . "order o JOIN " . DB_PREFIX . "order_product op where o.order_id = op.order_id and referer <> ''
+         group by referer order by products DESC";
+		$query = $this->db->query($sql);
+		return $query->rows[0];
+	
+	}
+	
+	public function getTotalReferees(){
+		$sql = "SELECT count(DISTINCT o.referer) as total
+        FROM " . DB_PREFIX . "order o JOIN " . DB_PREFIX . "order_product op where o.order_id = op.order_id and referer <> ''
+        group by referer";
+		$query = $this->db->query($sql);
 		return $query->row['total'];
 	}
 }

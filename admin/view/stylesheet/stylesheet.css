@@ -558,3 +558,8 @@ table.form > tbody > tr > td {
 	position: relative;
 	top: 3px;
 }
+
+div.dwnld {
+float: right;
+margin-top: 7px;
+}

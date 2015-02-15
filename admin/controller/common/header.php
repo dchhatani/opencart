@@ -119,6 +119,9 @@ class ControllerCommonHeader extends Controller {
 		$this->data['text_paypal_express'] = $this->language->get('text_paypal_manage');
 		$this->data['text_paypal_express_search'] = $this->language->get('text_paypal_search');
 		$this->data['text_recurring_profile'] = $this->language->get('text_recurring_profile');
+		$this->data['text_referee'] = $this->language->get('text_referee');
+		$this->data['text_report_referees'] = $this->language->get('text_report_referees');
+		
 
 		if (!$this->user->isLogged() || !isset($this->request->get['token']) || !isset($this->session->data['token']) || ($this->request->get['token'] != $this->session->data['token'])) {
 			$this->data['logged'] = '';
@@ -174,6 +177,7 @@ class ControllerCommonHeader extends Controller {
 			$this->data['report_customer_reward'] = $this->url->link('report/customer_reward', 'token=' . $this->session->data['token'], 'SSL');
 			$this->data['report_customer_credit'] = $this->url->link('report/customer_credit', 'token=' . $this->session->data['token'], 'SSL');
 			$this->data['report_affiliate_commission'] = $this->url->link('report/affiliate_commission', 'token=' . $this->session->data['token'], 'SSL');
+			$this->data['report_referees'] = $this->url->link('report/referees', 'token=' . $this->session->data['token'], 'SSL');				
 			$this->data['review'] = $this->url->link('catalog/review', 'token=' . $this->session->data['token'], 'SSL');
 			$this->data['return'] = $this->url->link('sale/return', 'token=' . $this->session->data['token'], 'SSL');
 			$this->data['return_action'] = $this->url->link('localisation/return_action', 'token=' . $this->session->data['token'], 'SSL');

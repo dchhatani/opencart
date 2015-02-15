@@ -1,0 +1,230 @@
+2015-02-08 12:04:16 - PHP Warning:  Missing argument 3 for ModelCatalogProduct::getProductIdForCategory(), called in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 277 and defined in C:\xampp\htdocs\opencart\catalog\model\catalog\product.php on line 318
+2015-02-08 12:05:39 - PHP Notice:  Error: Unknown column 'p.product_id' in 'field list'<br />Error No: 1054<br />SELECT p.product_id FROM oc_product_to_category WHERE category_id = 20 AND product_id <> 40 LIMIT 1 in C:\xampp\htdocs\opencart\system\database\mysql.php on line 50
+2015-02-08 16:21:00 - PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 278
+2015-02-08 16:21:00 - PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 278
+2015-02-08 16:22:36 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 278
+2015-02-08 16:22:36 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 279
+2015-02-08 16:22:36 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 278
+2015-02-08 16:22:36 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 279
+2015-02-08 16:35:00 - PHP Notice:  Undefined index: category_id in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 281
+2015-02-08 16:35:00 - PHP Notice:  Undefined index: category_id in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 281
+2015-02-08 16:55:11 - PHP Notice:  Undefined variable: product_data in C:\xampp\htdocs\opencart\catalog\model\catalog\product.php on line 324
+2015-02-08 16:55:11 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 278
+2015-02-11 10:14:02 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 263
+2015-02-11 10:14:02 - PHP Notice:  Undefined index: description in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 263
+2015-02-11 10:25:59 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 259
+2015-02-11 10:25:59 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 262
+2015-02-11 10:25:59 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 262
+2015-02-11 10:25:59 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 259
+2015-02-11 10:25:59 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 262
+2015-02-11 10:25:59 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 262
+2015-02-11 10:27:58 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 259
+2015-02-11 10:27:58 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 262
+2015-02-11 10:27:58 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 262
+2015-02-11 10:27:58 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 259
+2015-02-11 10:27:58 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 262
+2015-02-11 10:27:58 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 262
+2015-02-11 10:29:13 - PHP Notice:  Undefined variable: cpthumb in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 295
+2015-02-11 10:29:13 - PHP Notice:  Undefined variable: cpthumb in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 295
+2015-02-11 10:29:15 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 259
+2015-02-11 10:29:15 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 262
+2015-02-11 10:29:15 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 262
+2015-02-11 10:29:15 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 259
+2015-02-11 10:29:15 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 262
+2015-02-11 10:29:15 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 262
+2015-02-11 10:35:07 - PHP Notice:  Undefined variable: cpthumb in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 295
+2015-02-11 10:35:07 - PHP Notice:  Undefined variable: cpthumb in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 295
+2015-02-11 10:35:08 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 259
+2015-02-11 10:35:08 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 262
+2015-02-11 10:35:08 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 262
+2015-02-11 10:35:08 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 259
+2015-02-11 10:35:08 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 262
+2015-02-11 10:35:08 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 262
+2015-02-11 10:36:00 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 260
+2015-02-11 10:36:00 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 260
+2015-02-11 10:36:00 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 260
+2015-02-11 10:36:00 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 262
+2015-02-11 10:36:00 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 262
+2015-02-11 10:36:00 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 260
+2015-02-11 10:36:00 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 260
+2015-02-11 10:36:00 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 260
+2015-02-11 10:36:00 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 262
+2015-02-11 10:36:00 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 262
+2015-02-11 11:16:08 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 254
+2015-02-11 11:16:08 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 257
+2015-02-11 11:16:08 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 257
+2015-02-11 11:16:08 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 254
+2015-02-11 11:16:08 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 257
+2015-02-11 11:16:08 - PHP Notice:  Undefined variable: product in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\product\product.tpl on line 257
+2015-02-12 11:53:26 - PHP Notice:  Undefined variable: product_data in C:\xampp\htdocs\opencart\catalog\model\catalog\product.php on line 324
+2015-02-12 11:53:26 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 278
+2015-02-12 14:02:33 - PHP Notice:  Undefined variable: category in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 277
+2015-02-12 14:22:26 - PHP Notice:  Undefined variable: result in C:\xampp\htdocs\opencart\catalog\model\catalog\product.php on line 322
+2015-02-12 14:22:26 - PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, null given in C:\xampp\htdocs\opencart\catalog\model\catalog\product.php on line 322
+2015-02-12 14:23:00 - PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, object given in C:\xampp\htdocs\opencart\catalog\model\catalog\product.php on line 322
+2015-02-12 14:25:09 - PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, object given in C:\xampp\htdocs\opencart\catalog\model\catalog\product.php on line 322
+2015-02-12 14:25:42 - PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, array given in C:\xampp\htdocs\opencart\catalog\model\catalog\product.php on line 322
+2015-02-12 14:28:20 - PHP Unknown:  Object of class stdClass could not be converted to string in C:\xampp\htdocs\opencart\catalog\model\catalog\product.php on line 323
+2015-02-12 14:29:09 - PHP Notice:  Object of class stdClass could not be converted to int in C:\xampp\htdocs\opencart\catalog\model\catalog\product.php on line 323
+2015-02-12 14:32:15 - PHP Unknown:  Object of class stdClass could not be converted to string in C:\xampp\htdocs\opencart\catalog\model\catalog\product.php on line 323
+2015-02-12 14:39:40 - PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, object given in C:\xampp\htdocs\opencart\catalog\model\catalog\product.php on line 323
+2015-02-12 14:57:14 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\opencart\catalog\model\catalog\product.php on line 323
+2015-02-12 15:13:40 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT1' at line 1<br />Error No: 1064<br />select product_id from opencart.oc_order_product where product_id in (select product_id from opencart.oc_product_to_category where category_id in ( select category_id from opencart.oc_product_to_category where product_id = '40' ) ) AND product_id <> '40' GROUP BY product_id ORDER BY count(product_id) DESC LIMIT1 in C:\xampp\htdocs\opencart\system\database\mmysqli.php on line 39
+2015-02-12 15:13:40 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1' at line 1<br />Error No: 1064<br />SELECT p.product_id FROM opencart.oc_product p LEFT JOIN opencart.oc_product_to_store p2s ON (p.product_id = p2s.product_id) WHERE p.status = '1' AND p.date_available <= NOW() AND p.product_id IN ( select product_id from opencart.oc_product_to_category where category_id in ( select category_id from opencart.oc_product_to_category where product_id = '40')) AND p.product_id NOT IN ('40') ORDER BY p.viewed, p.date_added DESC LIMIT -1; in C:\xampp\htdocs\opencart\system\database\mmysqli.php on line 39
+2015-02-12 15:13:40 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\catalog\model\catalog\product.php on line 325
+2015-02-12 15:13:40 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\model\catalog\product.php on line 325
+2015-02-12 15:13:40 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\catalog\model\catalog\product.php on line 328
+2015-02-12 15:13:40 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\model\catalog\product.php on line 328
+2015-02-12 15:13:40 - PHP Notice:  Undefined variable: product_data in C:\xampp\htdocs\opencart\catalog\model\catalog\product.php on line 331
+2015-02-12 15:13:40 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 278
+2015-02-12 15:16:09 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT1' at line 1<br />Error No: 1064<br />select product_id from opencart.oc_order_product where product_id in (select product_id from opencart.oc_product_to_category where category_id in ( select category_id from opencart.oc_product_to_category where product_id = '40' ) ) AND product_id <> '40' GROUP BY product_id ORDER BY count(product_id) DESC LIMIT1; in C:\xampp\htdocs\opencart\system\database\mmysqli.php on line 39
+2015-02-12 15:16:09 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-1' at line 1<br />Error No: 1064<br />SELECT p.product_id FROM opencart.oc_product p LEFT JOIN opencart.oc_product_to_store p2s ON (p.product_id = p2s.product_id) WHERE p.status = '1' AND p.date_available <= NOW() AND p.product_id IN ( select product_id from opencart.oc_product_to_category where category_id in ( select category_id from opencart.oc_product_to_category where product_id = '40')) AND p.product_id NOT IN ('40') ORDER BY p.viewed, p.date_added DESC LIMIT -1; in C:\xampp\htdocs\opencart\system\database\mmysqli.php on line 39
+2015-02-12 15:16:09 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\catalog\model\catalog\product.php on line 325
+2015-02-12 15:16:09 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\model\catalog\product.php on line 325
+2015-02-12 15:16:09 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\catalog\model\catalog\product.php on line 328
+2015-02-12 15:16:09 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\model\catalog\product.php on line 328
+2015-02-12 15:16:09 - PHP Notice:  Undefined variable: product_data in C:\xampp\htdocs\opencart\catalog\model\catalog\product.php on line 331
+2015-02-12 15:16:09 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\catalog\controller\product\product.php on line 278
+2015-02-13 9:03:09 - PHP Notice:  Error: Could not load language common/login! in C:\xampp\htdocs\opencart\system\library\language.php on line 39
+2015-02-13 9:03:09 - PHP Notice:  Error: Could not load template C:/xampp/htdocs/opencart/catalog/view/theme/common/header.tpl! in C:\xampp\htdocs\opencart\system\engine\controller.php on line 91
+2015-02-13 9:08:03 - PHP Notice:  Error: Could not load template C:/xampp/htdocs/opencart/admin/view/theme/common/header.tpl! in C:\xampp\htdocs\opencart\system\engine\controller.php on line 91
+2015-02-14 7:08:59 - PHP Notice:  Undefined index: referer in C:\xampp\htdocs\opencart\catalog\controller\checkout\confirm.php on line 219
+2015-02-14 7:19:36 - PHP Notice:  Undefined index: referer in C:\xampp\htdocs\opencart\catalog\controller\checkout\confirm.php on line 219
+2015-02-14 7:22:33 - PHP Notice:  Undefined index: referer in C:\xampp\htdocs\opencart\catalog\controller\checkout\confirm.php on line 219
+2015-02-14 7:28:36 - PHP Notice:  Undefined index: referer in C:\xampp\htdocs\opencart\catalog\controller\checkout\confirm.php on line 219
+2015-02-14 7:28:36 - PHP Notice:  Undefined index: referer in C:\xampp\htdocs\opencart\catalog\controller\checkout\confirm.php on line 220
+2015-02-14 7:30:26 - PHP Notice:  Undefined index: referer in C:\xampp\htdocs\opencart\catalog\controller\checkout\confirm.php on line 221
+2015-02-14 7:36:54 - PHP Notice:  Undefined index: referer in C:\xampp\htdocs\opencart\catalog\controller\checkout\confirm.php on line 221
+2015-02-14 7:37:34 - PHP Notice:  Undefined index: referer in C:\xampp\htdocs\opencart\catalog\controller\checkout\confirm.php on line 221
+2015-02-14 7:37:34 - PHP Notice:  Undefined variable: test in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\checkout\confirm.tpl on line 3
+2015-02-14 7:39:32 - PHP Notice:  Undefined index: referer in C:\xampp\htdocs\opencart\catalog\controller\checkout\confirm.php on line 221
+2015-02-14 7:39:32 - PHP Notice:  Undefined index: referer in C:\xampp\htdocs\opencart\catalog\model\checkout\order.php on line 4
+2015-02-14 7:39:32 - PHP Notice:  Undefined variable: test in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\checkout\confirm.tpl on line 3
+2015-02-14 7:43:20 - PHP Notice:  Undefined index: referer in C:\xampp\htdocs\opencart\catalog\controller\checkout\confirm.php on line 221
+2015-02-14 7:43:20 - PHP Notice:  Undefined index: referer in C:\xampp\htdocs\opencart\catalog\model\checkout\order.php on line 4
+2015-02-14 7:43:20 - PHP Notice:  Undefined variable: test in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\checkout\confirm.tpl on line 3
+2015-02-14 7:44:15 - PHP Notice:  Undefined index: referer in C:\xampp\htdocs\opencart\catalog\controller\checkout\confirm.php on line 221
+2015-02-14 7:44:15 - PHP Notice:  Undefined index: referer in C:\xampp\htdocs\opencart\catalog\model\checkout\order.php on line 4
+2015-02-14 7:44:15 - PHP Notice:  Undefined variable: test in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\checkout\confirm.tpl on line 3
+2015-02-14 7:59:37 - PHP Notice:  Undefined index: referer in C:\xampp\htdocs\opencart\catalog\controller\checkout\payment_method.php on line 203
+2015-02-14 8:06:11 - PHP Notice:  Undefined index: referer in C:\xampp\htdocs\opencart\catalog\controller\checkout\payment_method.php on line 209
+2015-02-14 8:06:30 - PHP Notice:  Undefined index: referer in C:\xampp\htdocs\opencart\catalog\controller\checkout\payment_method.php on line 209
+2015-02-14 8:07:12 - PHP Notice:  Undefined index: referer in C:\xampp\htdocs\opencart\catalog\controller\checkout\payment_method.php on line 209
+2015-02-14 8:08:22 - PHP Notice:  Undefined index: referer in C:\xampp\htdocs\opencart\catalog\controller\checkout\payment_method.php on line 209
+2015-02-14 8:11:09 - PHP Notice:  Undefined index: referer in C:\xampp\htdocs\opencart\catalog\controller\checkout\payment_method.php on line 209
+2015-02-14 8:12:33 - PHP Notice:  Undefined index: referer in C:\xampp\htdocs\opencart\catalog\controller\checkout\payment_method.php on line 209
+2015-02-14 8:12:51 - PHP Notice:  Undefined index: referer in C:\xampp\htdocs\opencart\catalog\controller\checkout\payment_method.php on line 209
+2015-02-14 8:15:03 - PHP Notice:  Undefined index: referer in C:\xampp\htdocs\opencart\catalog\controller\checkout\payment_method.php on line 209
+2015-02-14 8:17:01 - PHP Notice:  Undefined index: referer in C:\xampp\htdocs\opencart\catalog\controller\checkout\payment_method.php on line 209
+2015-02-14 8:21:38 - PHP Notice:  Undefined index: referer in C:\xampp\htdocs\opencart\catalog\controller\checkout\payment_method.php on line 209
+2015-02-14 8:22:42 - PHP Notice:  Undefined index: referer in C:\xampp\htdocs\opencart\catalog\controller\checkout\payment_method.php on line 209
+2015-02-14 8:24:22 - PHP Notice:  Undefined variable: test in C:\xampp\htdocs\opencart\catalog\view\theme\default\template\checkout\confirm.tpl on line 3
+2015-02-14 9:18:49 - PHP Notice:  Error: Could not load language report/customer_stats! in C:\xampp\htdocs\opencart\system\library\language.php on line 39
+2015-02-14 9:29:17 - PHP Notice:  Error: Could not load language report/customer_stats! in C:\xampp\htdocs\opencart\system\library\language.php on line 39
+2015-02-14 11:22:09 - PHP Notice:  Undefined variable: text_referee in C:\xampp\htdocs\opencart\admin\view\template\common\header.tpl on line 240
+2015-02-14 11:22:09 - PHP Notice:  Undefined variable: text_report_referees in C:\xampp\htdocs\opencart\admin\view\template\common\header.tpl on line 242
+2015-02-14 11:22:10 - PHP Notice:  Undefined variable: text_referee in C:\xampp\htdocs\opencart\admin\view\template\common\header.tpl on line 240
+2015-02-14 11:22:10 - PHP Notice:  Undefined variable: text_report_referees in C:\xampp\htdocs\opencart\admin\view\template\common\header.tpl on line 242
+2015-02-14 11:23:02 - PHP Notice:  Undefined variable: text_referee in C:\xampp\htdocs\opencart\admin\view\template\common\header.tpl on line 240
+2015-02-14 11:23:02 - PHP Notice:  Undefined variable: text_report_referees in C:\xampp\htdocs\opencart\admin\view\template\common\header.tpl on line 242
+2015-02-14 11:26:07 - PHP Notice:  Undefined variable: text_referee in C:\xampp\htdocs\opencart\admin\view\template\common\header.tpl on line 240
+2015-02-14 11:26:07 - PHP Notice:  Undefined variable: text_report_referees in C:\xampp\htdocs\opencart\admin\view\template\common\header.tpl on line 242
+2015-02-14 11:29:06 - PHP Notice:  Undefined variable: text_referee in C:\xampp\htdocs\opencart\admin\view\template\common\header.tpl on line 240
+2015-02-14 11:29:06 - PHP Notice:  Undefined variable: text_report_referees in C:\xampp\htdocs\opencart\admin\view\template\common\header.tpl on line 242
+2015-02-14 12:50:53 - PHP Notice:  Undefined variable: referees in C:\xampp\htdocs\opencart\admin\view\template\report\referees.tpl on line 22
+2015-02-14 12:51:17 - PHP Notice:  Undefined index: href in C:\xampp\htdocs\opencart\admin\view\template\report\referees.tpl on line 25
+2015-02-14 12:51:17 - PHP Notice:  Undefined index: href in C:\xampp\htdocs\opencart\admin\view\template\report\referees.tpl on line 25
+2015-02-14 12:51:17 - PHP Notice:  Undefined index: href in C:\xampp\htdocs\opencart\admin\view\template\report\referees.tpl on line 25
+2015-02-14 12:51:17 - PHP Notice:  Undefined index: href in C:\xampp\htdocs\opencart\admin\view\template\report\referees.tpl on line 25
+2015-02-15 6:59:06 - PHP Notice:  Undefined variable: heading_title_ref in C:\xampp\htdocs\opencart\admin\view\template\report\referer_details.tpl on line 10
+2015-02-15 13:39:17 - PHP Notice:  Undefined index: href in C:\xampp\htdocs\opencart\admin\view\template\report\referees.tpl on line 55
+2015-02-15 13:39:17 - PHP Notice:  Undefined index: referer in C:\xampp\htdocs\opencart\admin\view\template\report\referees.tpl on line 55
+2015-02-15 13:39:17 - PHP Notice:  Undefined index: products in C:\xampp\htdocs\opencart\admin\view\template\report\referees.tpl on line 56
+2015-02-15 13:39:17 - PHP Notice:  Undefined index: orders in C:\xampp\htdocs\opencart\admin\view\template\report\referees.tpl on line 57
+2015-02-15 13:39:17 - PHP Notice:  Undefined index: total in C:\xampp\htdocs\opencart\admin\view\template\report\referees.tpl on line 58
+2015-02-15 14:18:14 - PHP Notice:  Undefined variable: bestcust in C:\xampp\htdocs\opencart\admin\view\template\report\customer_order.tpl on line 89
+2015-02-15 14:18:14 - PHP Notice:  Undefined variable: bestcust in C:\xampp\htdocs\opencart\admin\view\template\report\customer_order.tpl on line 89
+2015-02-15 14:18:14 - PHP Notice:  Undefined variable: bestcust in C:\xampp\htdocs\opencart\admin\view\template\report\customer_order.tpl on line 90
+2015-02-15 14:18:14 - PHP Notice:  Undefined variable: bestcust in C:\xampp\htdocs\opencart\admin\view\template\report\customer_order.tpl on line 91
+2015-02-15 14:18:14 - PHP Notice:  Undefined variable: bestcust in C:\xampp\htdocs\opencart\admin\view\template\report\customer_order.tpl on line 92
+2015-02-15 14:18:14 - PHP Notice:  Undefined variable: bestcust in C:\xampp\htdocs\opencart\admin\view\template\report\customer_order.tpl on line 93
+2015-02-15 14:18:14 - PHP Notice:  Undefined variable: bestcust in C:\xampp\htdocs\opencart\admin\view\template\report\customer_order.tpl on line 94
+2015-02-15 14:18:14 - PHP Notice:  Undefined variable: bestcust in C:\xampp\htdocs\opencart\admin\view\template\report\customer_order.tpl on line 95
+2015-02-15 14:18:14 - PHP Notice:  Undefined variable: bestcust in C:\xampp\htdocs\opencart\admin\view\template\report\customer_order.tpl on line 96
+2015-02-15 14:18:14 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\admin\view\template\report\customer_order.tpl on line 96
+2015-02-15 14:18:14 - PHP Notice:  Undefined variable: bestcustp in C:\xampp\htdocs\opencart\admin\view\template\report\customer_order.tpl on line 127
+2015-02-15 14:18:14 - PHP Notice:  Undefined variable: bestcustp in C:\xampp\htdocs\opencart\admin\view\template\report\customer_order.tpl on line 127
+2015-02-15 14:18:14 - PHP Notice:  Undefined variable: bestcustp in C:\xampp\htdocs\opencart\admin\view\template\report\customer_order.tpl on line 128
+2015-02-15 14:18:14 - PHP Notice:  Undefined variable: bestcustp in C:\xampp\htdocs\opencart\admin\view\template\report\customer_order.tpl on line 129
+2015-02-15 14:18:14 - PHP Notice:  Undefined variable: bestcustp in C:\xampp\htdocs\opencart\admin\view\template\report\customer_order.tpl on line 130
+2015-02-15 14:18:14 - PHP Notice:  Undefined variable: bestcustp in C:\xampp\htdocs\opencart\admin\view\template\report\customer_order.tpl on line 131
+2015-02-15 14:18:14 - PHP Notice:  Undefined variable: bestcustp in C:\xampp\htdocs\opencart\admin\view\template\report\customer_order.tpl on line 132
+2015-02-15 14:18:14 - PHP Notice:  Undefined variable: bestcustp in C:\xampp\htdocs\opencart\admin\view\template\report\customer_order.tpl on line 133
+2015-02-15 14:18:14 - PHP Notice:  Undefined variable: bestcustp in C:\xampp\htdocs\opencart\admin\view\template\report\customer_order.tpl on line 134
+2015-02-15 14:18:14 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\admin\view\template\report\customer_order.tpl on line 134
+2015-02-15 14:18:49 - PHP Notice:  Undefined variable: bestcustomer in C:\xampp\htdocs\opencart\admin\view\template\report\customer_order.tpl on line 87
+2015-02-15 14:18:49 - PHP Notice:  Undefined variable: bestcustomerp in C:\xampp\htdocs\opencart\admin\view\template\report\customer_order.tpl on line 125
+2015-02-15 14:20:08 - PHP Notice:  Undefined index: text in C:\xampp\htdocs\opencart\admin\view\template\report\customer_order.tpl on line 97
+2015-02-15 14:20:08 - PHP Notice:  Undefined index: text in C:\xampp\htdocs\opencart\admin\view\template\report\customer_order.tpl on line 135
+2015-02-15 14:34:02 - PHP Warning:  Missing argument 1 for ModelReportCustomer::getBestOrderByPrice(), called in C:\xampp\htdocs\opencart\admin\controller\report\customer_order.php on line 101 and defined in C:\xampp\htdocs\opencart\admin\model\report\customer.php on line 39
+2015-02-15 14:34:02 - PHP Warning:  Missing argument 1 for ModelReportCustomer::getBestOrderByProductsSold(), called in C:\xampp\htdocs\opencart\admin\controller\report\customer_order.php on line 114 and defined in C:\xampp\htdocs\opencart\admin\model\report\customer.php on line 51
+2015-02-15 14:34:12 - PHP Warning:  Missing argument 1 for ModelReportCustomer::getBestOrderByPrice(), called in C:\xampp\htdocs\opencart\admin\controller\report\customer_order.php on line 101 and defined in C:\xampp\htdocs\opencart\admin\model\report\customer.php on line 39
+2015-02-15 14:34:13 - PHP Warning:  Missing argument 1 for ModelReportCustomer::getBestOrderByProductsSold(), called in C:\xampp\htdocs\opencart\admin\controller\report\customer_order.php on line 114 and defined in C:\xampp\htdocs\opencart\admin\model\report\customer.php on line 51
+2015-02-15 14:34:19 - PHP Warning:  Missing argument 1 for ModelReportCustomer::getBestOrderByPrice(), called in C:\xampp\htdocs\opencart\admin\controller\report\customer_order.php on line 101 and defined in C:\xampp\htdocs\opencart\admin\model\report\customer.php on line 39
+2015-02-15 14:34:19 - PHP Notice:  Undefined variable: action in C:\xampp\htdocs\opencart\admin\controller\report\customer_order.php on line 110
+2015-02-15 14:34:19 - PHP Warning:  Missing argument 1 for ModelReportCustomer::getBestOrderByProductsSold(), called in C:\xampp\htdocs\opencart\admin\controller\report\customer_order.php on line 114 and defined in C:\xampp\htdocs\opencart\admin\model\report\customer.php on line 51
+2015-02-15 14:34:19 - PHP Notice:  Undefined variable: action in C:\xampp\htdocs\opencart\admin\controller\report\customer_order.php on line 123
+2015-02-15 14:34:19 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\admin\view\template\report\customer_order.tpl on line 96
+2015-02-15 14:34:19 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\admin\view\template\report\customer_order.tpl on line 134
+2015-02-15 14:36:20 - PHP Warning:  Missing argument 1 for ModelReportCustomer::getBestOrderByPrice(), called in C:\xampp\htdocs\opencart\admin\controller\report\customer_order.php on line 101 and defined in C:\xampp\htdocs\opencart\admin\model\report\customer.php on line 39
+2015-02-15 14:36:20 - PHP Warning:  Missing argument 1 for ModelReportCustomer::getBestOrderByProductsSold(), called in C:\xampp\htdocs\opencart\admin\controller\report\customer_order.php on line 121 and defined in C:\xampp\htdocs\opencart\admin\model\report\customer.php on line 51
+2015-02-15 14:36:23 - PHP Warning:  Missing argument 1 for ModelReportCustomer::getBestOrderByPrice(), called in C:\xampp\htdocs\opencart\admin\controller\report\customer_order.php on line 101 and defined in C:\xampp\htdocs\opencart\admin\model\report\customer.php on line 39
+2015-02-15 14:36:23 - PHP Warning:  Missing argument 1 for ModelReportCustomer::getBestOrderByProductsSold(), called in C:\xampp\htdocs\opencart\admin\controller\report\customer_order.php on line 121 and defined in C:\xampp\htdocs\opencart\admin\model\report\customer.php on line 51
+2015-02-15 14:36:39 - PHP Warning:  Missing argument 1 for ModelReportCustomer::getBestOrderByPrice(), called in C:\xampp\htdocs\opencart\admin\controller\report\customer_order.php on line 101 and defined in C:\xampp\htdocs\opencart\admin\model\report\customer.php on line 39
+2015-02-15 14:36:39 - PHP Warning:  Missing argument 1 for ModelReportCustomer::getBestOrderByProductsSold(), called in C:\xampp\htdocs\opencart\admin\controller\report\customer_order.php on line 121 and defined in C:\xampp\htdocs\opencart\admin\model\report\customer.php on line 51
+2015-02-15 15:07:26 - PHP Warning:  Missing argument 1 for ModelReportCustomer::getBestOrderByPrice(), called in C:\xampp\htdocs\opencart\admin\controller\report\customer_order.php on line 101 and defined in C:\xampp\htdocs\opencart\admin\model\report\customer.php on line 39
+2015-02-15 15:07:26 - PHP Warning:  Missing argument 1 for ModelReportCustomer::getBestOrderByProductsSold(), called in C:\xampp\htdocs\opencart\admin\controller\report\customer_order.php on line 121 and defined in C:\xampp\htdocs\opencart\admin\model\report\customer.php on line 75
+2015-02-15 15:07:35 - PHP Warning:  Missing argument 1 for ModelReportCustomer::getBestOrderByPrice(), called in C:\xampp\htdocs\opencart\admin\controller\report\customer_order.php on line 101 and defined in C:\xampp\htdocs\opencart\admin\model\report\customer.php on line 39
+2015-02-15 15:07:35 - PHP Warning:  Missing argument 1 for ModelReportCustomer::getBestOrderByProductsSold(), called in C:\xampp\htdocs\opencart\admin\controller\report\customer_order.php on line 121 and defined in C:\xampp\htdocs\opencart\admin\model\report\customer.php on line 75
+2015-02-15 15:07:42 - PHP Warning:  Missing argument 1 for ModelReportCustomer::getBestOrderByPrice(), called in C:\xampp\htdocs\opencart\admin\controller\report\customer_order.php on line 101 and defined in C:\xampp\htdocs\opencart\admin\model\report\customer.php on line 39
+2015-02-15 15:07:42 - PHP Warning:  Missing argument 1 for ModelReportCustomer::getBestOrderByProductsSold(), called in C:\xampp\htdocs\opencart\admin\controller\report\customer_order.php on line 121 and defined in C:\xampp\htdocs\opencart\admin\model\report\customer.php on line 75
+2015-02-15 15:10:14 - PHP Warning:  Missing argument 1 for ModelReportCustomer::getBestOrderByPrice(), called in C:\xampp\htdocs\opencart\admin\controller\report\customer_order.php on line 101 and defined in C:\xampp\htdocs\opencart\admin\model\report\customer.php on line 39
+2015-02-15 15:10:14 - PHP Warning:  Missing argument 1 for ModelReportCustomer::getBestOrderByProductsSold(), called in C:\xampp\htdocs\opencart\admin\controller\report\customer_order.php on line 121 and defined in C:\xampp\htdocs\opencart\admin\model\report\customer.php on line 75
+2015-02-15 15:10:21 - PHP Warning:  Missing argument 1 for ModelReportCustomer::getBestOrderByPrice(), called in C:\xampp\htdocs\opencart\admin\controller\report\customer_order.php on line 101 and defined in C:\xampp\htdocs\opencart\admin\model\report\customer.php on line 39
+2015-02-15 15:10:21 - PHP Warning:  Missing argument 1 for ModelReportCustomer::getBestOrderByProductsSold(), called in C:\xampp\htdocs\opencart\admin\controller\report\customer_order.php on line 121 and defined in C:\xampp\htdocs\opencart\admin\model\report\customer.php on line 75
+2015-02-15 15:11:54 - PHP Warning:  Missing argument 1 for ModelReportCustomer::getBestOrderByPrice(), called in C:\xampp\htdocs\opencart\admin\controller\report\customer_order.php on line 101 and defined in C:\xampp\htdocs\opencart\admin\model\report\customer.php on line 39
+2015-02-15 15:11:54 - PHP Warning:  Missing argument 1 for ModelReportCustomer::getBestOrderByProductsSold(), called in C:\xampp\htdocs\opencart\admin\controller\report\customer_order.php on line 121 and defined in C:\xampp\htdocs\opencart\admin\model\report\customer.php on line 75
+2015-02-15 15:12:04 - PHP Warning:  Missing argument 1 for ModelReportCustomer::getBestOrderByPrice(), called in C:\xampp\htdocs\opencart\admin\controller\report\customer_order.php on line 101 and defined in C:\xampp\htdocs\opencart\admin\model\report\customer.php on line 39
+2015-02-15 15:12:04 - PHP Warning:  Missing argument 1 for ModelReportCustomer::getBestOrderByProductsSold(), called in C:\xampp\htdocs\opencart\admin\controller\report\customer_order.php on line 121 and defined in C:\xampp\htdocs\opencart\admin\model\report\customer.php on line 75
+2015-02-15 15:12:11 - PHP Warning:  Missing argument 1 for ModelReportCustomer::getBestOrderByPrice(), called in C:\xampp\htdocs\opencart\admin\controller\report\customer_order.php on line 101 and defined in C:\xampp\htdocs\opencart\admin\model\report\customer.php on line 39
+2015-02-15 15:12:11 - PHP Warning:  Missing argument 1 for ModelReportCustomer::getBestOrderByProductsSold(), called in C:\xampp\htdocs\opencart\admin\controller\report\customer_order.php on line 121 and defined in C:\xampp\htdocs\opencart\admin\model\report\customer.php on line 75
+2015-02-15 15:13:34 - PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\opencart\admin\model\report\customer.php on line 72
+2015-02-15 15:13:34 - PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\opencart\admin\model\report\customer.php on line 108
+2015-02-15 15:13:34 - PHP Notice:  Undefined variable: bestcustomer in C:\xampp\htdocs\opencart\admin\view\template\report\customer_order.tpl on line 87
+2015-02-15 15:13:34 - PHP Notice:  Undefined variable: bestcustomerp in C:\xampp\htdocs\opencart\admin\view\template\report\customer_order.tpl on line 125
+2015-02-15 15:20:48 - PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\opencart\admin\model\report\customer.php on line 72
+2015-02-15 15:20:48 - PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\opencart\admin\model\report\customer.php on line 108
+2015-02-15 15:20:48 - PHP Notice:  Undefined variable: bestcustomer in C:\xampp\htdocs\opencart\admin\view\template\report\customer_order.tpl on line 87
+2015-02-15 15:20:48 - PHP Notice:  Undefined variable: bestcustomerp in C:\xampp\htdocs\opencart\admin\view\template\report\customer_order.tpl on line 125
+2015-02-15 15:22:01 - PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\opencart\admin\model\report\customer.php on line 72
+2015-02-15 15:22:01 - PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\opencart\admin\model\report\customer.php on line 108
+2015-02-15 15:22:01 - PHP Notice:  Undefined variable: bestcustomer in C:\xampp\htdocs\opencart\admin\view\template\report\customer_order.tpl on line 87
+2015-02-15 15:22:01 - PHP Notice:  Undefined variable: bestcustomerp in C:\xampp\htdocs\opencart\admin\view\template\report\customer_order.tpl on line 125
+2015-02-15 15:22:15 - PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\opencart\admin\model\report\customer.php on line 72
+2015-02-15 15:22:15 - PHP Notice:  Undefined offset: 0 in C:\xampp\htdocs\opencart\admin\model\report\customer.php on line 108
+2015-02-15 17:04:48 - PHP Notice:  Undefined variable: cname in C:\xampp\htdocs\opencart\admin\controller\report\customer_stats.php on line 176
+2015-02-15 17:06:05 - PHP Notice:  Undefined variable: cname in C:\xampp\htdocs\opencart\admin\controller\report\customer_stats.php on line 175
+2015-02-15 17:06:05 - PHP Notice:  Undefined variable: cname in C:\xampp\htdocs\opencart\admin\controller\report\customer_stats.php on line 176
+2015-02-15 17:06:08 - PHP Notice:  Undefined variable: cname in C:\xampp\htdocs\opencart\admin\controller\report\customer_stats.php on line 175
+2015-02-15 17:06:08 - PHP Notice:  Undefined variable: cname in C:\xampp\htdocs\opencart\admin\controller\report\customer_stats.php on line 176
+2015-02-15 17:06:11 - PHP Notice:  Undefined variable: cname in C:\xampp\htdocs\opencart\admin\controller\report\customer_stats.php on line 175
+2015-02-15 17:06:11 - PHP Notice:  Undefined variable: cname in C:\xampp\htdocs\opencart\admin\controller\report\customer_stats.php on line 176
+2015-02-15 17:25:10 - PHP Notice:  Error: Table 'opencart.oc_oc_order' doesn't exist<br />Error No: 1146<br />SELECT o.referer, count(op.product_id) as products , count(DISTINCT o.order_id) as orders, sum(o.total) as total
+        FROM oc_oc_order o JOIN oc_oc_order_product op where o.order_id = op.order_id and referer <> ''
+         group by referer in C:\xampp\htdocs\opencart\system\database\mmysqli.php on line 39
+2015-02-15 17:25:10 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\admin\model\report\customer.php on line 266
+2015-02-15 17:25:10 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\admin\controller\report\referees.php on line 103
+2015-02-15 17:28:21 - PHP Notice:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'o, oc_order_product op , oc_product_description p where o.order_id = op.order_id' at line 1<br />Error No: 1064<br />select DISTINCT op.product_id as product_id , p.name as name from oc_ order o, oc_order_product op , oc_product_description p where o.order_id = op.order_id AND op.product_id = p.product_id AND o.referer = 'Naman' in C:\xampp\htdocs\opencart\system\database\mmysqli.php on line 39
+2015-02-15 17:28:21 - PHP Notice:  Trying to get property of non-object in C:\xampp\htdocs\opencart\admin\model\report\customer.php on line 273
+2015-02-15 17:28:21 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\opencart\admin\controller\report\referer_details.php on line 104
+2015-02-15 17:28:21 - PHP Notice:  Undefined variable: refdetails in C:\xampp\htdocs\opencart\admin\view\template\report\referer_details.tpl on line 22

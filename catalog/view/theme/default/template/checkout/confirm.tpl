@@ -1,5 +1,6 @@
 <?php if (!isset($redirect)) { ?>
 <div class="checkout-product">
+  <?php echo $test ?>
   <table>
     <thead>
       <tr>

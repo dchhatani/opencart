@@ -215,6 +215,7 @@ class ControllerCheckoutConfirm extends Controller {
 				$data['shipping_method'] = '';
 				$data['shipping_code'] = '';
 			}
+			   
 			
 			$product_data = array();
 		
@@ -322,7 +323,13 @@ class ControllerCheckoutConfirm extends Controller {
 			} else {
 				$data['accept_language'] = '';
 			}
-						
+
+			if (isset($this->session->data['referer'])) {
+				$data['referer'] = $this->session->data['referer'];
+			} else {
+				$data['referer'] = "None";
+			}
+			
 			$this->load->model('checkout/order');
 			
 			$this->session->data['order_id'] = $this->model_checkout_order->addOrder($data);

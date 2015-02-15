@@ -1023,15 +1023,20 @@ ul.box-filter > li ul {
 }
 .product-info > .left + .right {
 	margin-left: 265px;
-	width: 40%;
 }
-.product-info > .left + .right + .suggestions {
-	float: right;
-    width: 22%;
-    height: 100%;
-    margin-top: -304px;
-    background-color: whitesmoke;
+.product-info .suggestions {
+    background-color: white;
     border: 1px solid #E7E7E7;
+    margin-bottom: 15px;
+}
+
+.product-info .suggestions .psuggestions {
+border: 1px solid;
+width: 33%;
+display: inline-block;
+height: 200px;
+margin: 7px 7px 7px 7px;
+text-align: center;
 }
 
 .product-info .suggestions .text {
@@ -1658,4 +1663,37 @@ ul.box-filter > li ul {
 }
 .banner div img {
 	margin-bottom: 20px;
+}
+
+.product-info .box-product .image {
+display: block;
+margin-bottom: 5px;
+border: 1px solid #E7E7E7;
+}
+
+.product-info .box-product .name {
+display: inline-block;
+}
+
+.product-info .box-product .image img {
+padding: 3px;
+border: 0px
+}
+
+.product-info .box-product .price {
+display: block;
+font-weight: bold;
+color: #333333;
+margin-bottom: 4px;
+}
+
+table.list.refprod{
+.list.ref {
+border-collapse: collapse;
+width: 30%;
+border-top: 1px solid #DDDDDD;
+border-left: 1px solid #DDDDDD;
+margin-bottom: 20px;
+}
+
 }

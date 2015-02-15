@@ -315,6 +315,22 @@ class ModelCatalogProduct extends Model {
 		return $product_data;
 	}
 
+	public function getProductIdForCategory($categoryId, $productId, $limit) {
+		
+		//$query = $this->db->query("SELECT p2c.product_id FROM " . DB_PREFIX ."product_to_category p2c WHERE category_id = " . (int)$categoryId . " AND product_id <> " . (int)$productId . " ORDER BY RAND() LIMIT " . (int)$limit);
+		$query1 = $this->db->query("select product_id from opencart.oc_order_product where product_id in (select product_id from opencart.oc_product_to_category where category_id in ( select category_id from opencart.oc_product_to_category where product_id = '" . (int)$productId. "' ) ) AND product_id <> '" . (int)$productId. "' GROUP BY product_id ORDER BY count(product_id) DESC LIMIT ". (int)$limit );
+		$num_rows = $this->db->query("SELECT FOUND_ROWS() as total");
+		$limit2 = (int)$limit-(int)$num_rows->rows[0]['total'];
+		$query2 = $this->db->query("SELECT p.product_id FROM opencart.oc_product p LEFT JOIN opencart.oc_product_to_store p2s ON (p.product_id = p2s.product_id) WHERE p.status = '1' AND p.date_available <= NOW() AND p.product_id IN ( select product_id from opencart.oc_product_to_category where category_id in ( select category_id from opencart.oc_product_to_category where product_id = '" . (int)$productId. "')) AND p.product_id NOT IN ('" . (int)$productId. "') ORDER BY p.viewed, p.date_added DESC LIMIT ". $limit2 .";");
+		foreach ($query1->rows as $result) {
+			$product_data[$result['product_id']] = $this->getProduct($result['product_id']);
+		}
+		foreach ($query2->rows as $result) {
+			$product_data[$result['product_id']] = $this->getProduct($result['product_id']);
+		}		
+		return $product_data;
+	}
+	
 	public function getBestSellerProducts($limit) {
 		if ($this->customer->isLogged()) {
 			$customer_group_id = $this->customer->getCustomerGroupId();

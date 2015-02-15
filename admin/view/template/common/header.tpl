@@ -237,6 +237,11 @@ $(document).ready(function(){
               <li><a href="<?php echo $report_customer_credit; ?>"><?php echo $text_report_customer_credit; ?></a></li>
             </ul>
           </li>
+          <li><a class="parent"><?php echo $text_referee; ?></a>
+            <ul>
+              <li><a href="<?php echo $report_referees; ?>"><?php echo $text_report_referees; ?></a></li>
+            </ul>
+          </li>
           <li><a class="parent"><?php echo $text_affiliate; ?></a>
             <ul>
               <li><a href="<?php echo $report_affiliate_commission; ?>"><?php echo $text_report_affiliate_commission; ?></a></li>

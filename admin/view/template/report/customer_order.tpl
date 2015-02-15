@@ -47,7 +47,7 @@
           <?php if ($customers) { ?>
           <?php foreach ($customers as $customer) { ?>
           <tr>
-            <td class="left"><?php echo $customer['customer']; ?></td>
+            <td class="left"><a href="<?php echo $customer['href']; ?>"><?php echo $customer['customer']; ?></a></td>
             <td class="left"><?php echo $customer['email']; ?></td>
             <td class="left"><?php echo $customer['customer_group']; ?></td>
             <td class="left"><?php echo $customer['status']; ?></td>
@@ -67,6 +67,82 @@
         </tbody>
       </table>
       <div class="pagination"><?php echo $pagination; ?></div>
+      <div class = "head_best_cust">
+      <h3><?php echo $heading_bestcust1 ?></h3>
+      </div>
+      <table class="list">
+        <thead>
+          <tr>
+            <td class="left"><?php echo $column_customer; ?></td>
+            <td class="left"><?php echo $column_email; ?></td>
+            <td class="left"><?php echo $column_customer_group; ?></td>
+            <td class="left"><?php echo $column_status; ?></td>
+            <td class="right"><?php echo $column_orders; ?></td>
+            <td class="right"><?php echo $column_products; ?></td>
+            <td class="right"><?php echo $column_total; ?></td>
+            <td class="right"><?php echo $column_action; ?></td>
+          </tr>
+        </thead>
+        <tbody>
+          <?php if ($bestcustomer) { ?>
+          <tr>
+            <td class="left"><a href="<?php echo $bestcustomer[0]['href']; ?>"><?php echo $bestcustomer[0]['customer']; ?></a></td>
+            <td class="left"><?php echo $bestcustomer[0]['email']; ?></td>
+            <td class="left"><?php echo $bestcustomer[0]['customer_group']; ?></td>
+            <td class="left"><?php echo $bestcustomer[0]['status']; ?></td>
+            <td class="right"><?php echo $bestcustomer[0]['orders']; ?></td>
+            <td class="right"><?php echo $bestcustomer[0]['products']; ?></td>
+            <td class="right"><?php echo $bestcustomer[0]['total']; ?></td>
+            <td class="right"><?php foreach ($bestcustomer[0]['action'] as $action) { ?>
+              [ <a href="<?php echo $bestcustomer[0]['href']; ?>"><?php echo $action['text']; ?></a> ]
+              <?php } ?></td>
+          </tr>
+          <?php } else { ?>
+          <tr>
+            <td class="center" colspan="8"><?php echo $text_no_results; ?></td>
+          </tr>
+          <?php } ?>
+        </tbody>
+      </table>
+      
+      <div class = "head_best_cust">
+      <h3><?php echo $heading_bestcust2 ?></h3>
+      </div>
+      <table class="list">
+        <thead>
+          <tr>
+            <td class="left"><?php echo $column_customer; ?></td>
+            <td class="left"><?php echo $column_email; ?></td>
+            <td class="left"><?php echo $column_customer_group; ?></td>
+            <td class="left"><?php echo $column_status; ?></td>
+            <td class="right"><?php echo $column_orders; ?></td>
+            <td class="right"><?php echo $column_products; ?></td>
+            <td class="right"><?php echo $column_total; ?></td>
+            <td class="right"><?php echo $column_action; ?></td>
+          </tr>
+        </thead>
+        <tbody>
+          <?php if ($bestcustomerp) { ?>
+          <tr>
+            <td class="left"><a href="<?php echo $bestcustomerp[0]['href']; ?>"><?php echo $bestcustomerp[0]['customer']; ?></a></td>
+            <td class="left"><?php echo $bestcustomerp[0]['email']; ?></td>
+            <td class="left"><?php echo $bestcustomerp[0]['customer_group']; ?></td>
+            <td class="left"><?php echo $bestcustomerp[0]['status']; ?></td>
+            <td class="right"><?php echo $bestcustomerp[0]['orders']; ?></td>
+            <td class="right"><?php echo $bestcustomerp[0]['products']; ?></td>
+            <td class="right"><?php echo $bestcustomerp[0]['total']; ?></td>
+            <td class="right"><?php foreach ($bestcustomerp[0]['action'] as $action) { ?>
+              [ <a href="<?php echo $bestcustomerp[0]['href']; ?>"><?php echo $action['text']; ?></a> ]
+              <?php } ?></td>
+          </tr>
+          <?php } else { ?>
+          <tr>
+            <td class="center" colspan="8"><?php echo $text_no_results; ?></td>
+          </tr>
+          <?php } ?>
+        </tbody>
+      </table>
+      
     </div>
   </div>
 </div>

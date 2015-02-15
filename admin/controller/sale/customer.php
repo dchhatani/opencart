@@ -425,7 +425,8 @@ class ControllerSaleCustomer extends Controller {
 				'ip'             => $result['ip'],
 				'date_added'     => date($this->language->get('date_format_short'), strtotime($result['date_added'])),
 				'selected'       => isset($this->request->post['selected']) && in_array($result['customer_id'], $this->request->post['selected']),
-				'action'         => $action
+				'action'         => $action,
+				'href'           => $this->url->link('report/customer_stats', 'token=' . $this->session->data['token'] . '&customer_id=' . $result['customer_id'] . $url, 'SSL')
 			);
 		}	
 					

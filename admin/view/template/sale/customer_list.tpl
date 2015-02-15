@@ -115,7 +115,7 @@
                 <?php } else { ?>
                 <input type="checkbox" name="selected[]" value="<?php echo $customer['customer_id']; ?>" />
                 <?php } ?></td>
-              <td class="left"><?php echo $customer['name']; ?></td>
+              <td class="left"><a href="<?php echo $customer['href']; ?>"><?php echo $customer['name']; ?></a></td>
               <td class="left"><?php echo $customer['email']; ?></td>
               <td class="left"><?php echo $customer['customer_group']; ?></td>
               <td class="left"><?php echo $customer['status']; ?></td>

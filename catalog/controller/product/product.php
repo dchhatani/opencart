@@ -232,6 +232,7 @@ class ControllerProductProduct extends Controller {
 			$this->data['heading_title'] = $product_info['name'];
 			
 			$this->data['text_select'] = $this->language->get('text_select');
+			$this->data['text_suggestion'] = $this->language->get('text_suggestion');				
 			$this->data['text_manufacturer'] = $this->language->get('text_manufacturer');
 			$this->data['text_model'] = $this->language->get('text_model');
 			$this->data['text_reward'] = $this->language->get('text_reward');
@@ -263,6 +264,47 @@ class ControllerProductProduct extends Controller {
 			$this->data['button_compare'] = $this->language->get('button_compare');			
 			$this->data['button_upload'] = $this->language->get('button_upload');
 			$this->data['button_continue'] = $this->language->get('button_continue');
+			
+			// Code to get the product categories
+			
+			//get categories for which product belongs to
+			$this->data['categories'] = $this->model_catalog_product->getCategories($this->request->get['product_id']);
+			$categories = $this->data['categories'];
+			
+			// Get product Id of one product per category
+			$this->data['pcategories']  = array();
+			//foreach ($categories as $category) {
+				$products = $this->model_catalog_product->getProductIdForCategory((int)5, $this->request->get['product_id'], 5);				
+		        foreach($products as $product) {
+				//$results = $this->model_catalog_product->getProductRelated($product['product_id']);
+				if (($this->config->get('config_customer_price') && $this->customer->isLogged()) || !$this->config->get('config_customer_price')) {
+					$cpprice = $this->currency->format($this->tax->calculate($product['price'], $product['tax_class_id'], $this->config->get('config_tax')));
+				} else {
+					$cpprice = false;
+				}
+				if ((float)$product['special']) {
+					$special = $this->currency->format($this->tax->calculate($product['special'], $product['tax_class_id'], $this->config->get('config_tax')));
+				} else {
+					$special = false;
+				}
+				$this->load->model('tool/image');
+				if ($product['image']) {
+					$cpthumb = $this->model_tool_image->resize($product['image'], $this->config->get('config_image_additional_width'), $this->config->get('config_image_additional_height'));
+				} else {
+					$cpthumb = '';
+				}				
+				$this->data['pcategories'][] = array(
+						'product_id' => $product['product_id'],
+						'name' => $product['name'],
+						'price' => $cpprice,
+						'thumb' => $cpthumb,
+						'href' => $this->url->link('product/product', 'product_id=' . $product['product_id']),
+						'special' => $special,
+						'rating' => $product['rating'],
+						'reviews' => sprintf($this->language->get('text_reviews'), (int)$product['reviews'])
+				);
+				}
+			//}
 			
 			$this->load->model('catalog/review');
 

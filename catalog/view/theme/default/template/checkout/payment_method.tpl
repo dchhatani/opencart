@@ -21,6 +21,14 @@
 <b><?php echo $text_comments; ?></b>
 <textarea name="comment" rows="8" style="width: 98%;"><?php echo $comment; ?></textarea>
 <br />
+<div id="referer-details">
+    <table>
+    <tr><th colspan="2">Referer Details</th></tr>
+    <tr><td>Referer Name</td>
+    <td><input type="text" id="referer" style="margin-left: 20px;"></td></tr>
+    </table>
+ </div>
+<br />
 <br />
 <?php if ($text_agree) { ?>
 <div class="buttons">

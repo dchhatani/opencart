@@ -64,6 +64,8 @@ class ControllerReportCustomerOrder extends Controller {
 		$this->load->model('report/customer');
 		
 		$this->data['customers'] = array();
+		$this->data['bestcustomer'] = array();
+		$this->data['bestcustomerp'] = array();
 		
 		$data = array(
 			'filter_date_start'	     => $filter_date_start, 
@@ -93,10 +95,51 @@ class ControllerReportCustomerOrder extends Controller {
 				'orders'         => $result['orders'],
 				'products'       => $result['products'],
 				'total'          => $this->currency->format($result['total'], $this->config->get('config_currency')),
-				'action'         => $action
+				'action'         => $action,
+				'href'	         => $this->url->link('report/customer_stats', 'token=' . $this->session->data['token'] . '&customer_id=' . $result['customer_id'] . $url, 'SSL')
 			);
 		}
-		 
+		
+		$result = $this->model_report_customer->getBestOrderByPrice($data);
+		$action = array();
+		if($result){
+		$action[] = array(
+				'text' => $this->language->get('text_edit'),
+				'href' => $this->url->link('sale/customer/update', 'token=' . $this->session->data['token'] . '&customer_id=' . $result['customer_id'] . $url, 'SSL')
+		);
+		$this->data['bestcustomer'][] = array(
+				'customer'       => $result['customer'],
+				'email'          => $result['email'],
+				'customer_group' => $result['customer_group'],
+				'status'         => ($result['status'] ? $this->language->get('text_enabled') : $this->language->get('text_disabled')),
+				'orders'         => $result['orders'],
+				'products'       => $result['products'],
+				'total'          => $this->currency->format($result['total'], $this->config->get('config_currency')),
+				'action'         => $action,
+				'href'	         => $this->url->link('report/customer_stats', 'token=' . $this->session->data['token'] . '&customer_id=' . $result['customer_id'] . $url, 'SSL')
+		);
+		}
+		
+		$result = $this->model_report_customer->getBestOrderByProductsSold($data);
+		if($result){
+		$action = array();
+		
+		$action[] = array(
+				'text' => $this->language->get('text_edit'),
+				'href' => $this->url->link('sale/customer/update', 'token=' . $this->session->data['token'] . '&customer_id=' . $result['customer_id'] . $url, 'SSL')
+		);
+		$this->data['bestcustomerp'][] = array(
+				'customer'       => $result['customer'],
+				'email'          => $result['email'],
+				'customer_group' => $result['customer_group'],
+				'status'         => ($result['status'] ? $this->language->get('text_enabled') : $this->language->get('text_disabled')),
+				'orders'         => $result['orders'],
+				'products'       => $result['products'],
+				'total'          => $this->currency->format($result['total'], $this->config->get('config_currency')),
+				'action'         => $action,
+				'href'	         => $this->url->link('report/customer_stats', 'token=' . $this->session->data['token'] . '&customer_id=' . $result['customer_id'] . $url, 'SSL')
+		);
+		} 
  		$this->data['heading_title'] = $this->language->get('heading_title');
 		 
 		$this->data['text_no_results'] = $this->language->get('text_no_results');
@@ -110,7 +153,8 @@ class ControllerReportCustomerOrder extends Controller {
 		$this->data['column_products'] = $this->language->get('column_products');
 		$this->data['column_total'] = $this->language->get('column_total');
 		$this->data['column_action'] = $this->language->get('column_action');
-		
+		$this->data['heading_bestcust1'] = $this->language->get('heading_bestcust1');
+		$this->data['heading_bestcust2'] = $this->language->get('heading_bestcust2');
 		$this->data['entry_date_start'] = $this->language->get('entry_date_start');
 		$this->data['entry_date_end'] = $this->language->get('entry_date_end');
 		$this->data['entry_status'] = $this->language->get('entry_status');
